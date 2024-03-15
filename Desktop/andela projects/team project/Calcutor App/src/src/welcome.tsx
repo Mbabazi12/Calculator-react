@@ -1,11 +1,11 @@
 import React from "react";
-import Main from "./components/main";
+import App from "./App";
 
 
 function Welcome(){
     return(
     <>
-        <Main/>
+        <App/>
         </>
      )
 }

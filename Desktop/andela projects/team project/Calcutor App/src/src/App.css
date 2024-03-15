@@ -1,44 +1,8 @@
-/* .App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-body{
-  background-color: hsl(222, 26%, 31%);
+.body{
+  background-color: var(--body-background);
   width: 100%;
   max-width: 1440px;
   height: 100vh;
@@ -47,28 +11,18 @@ body{
   align-items: center;
   flex-direction: column;
 }
-.body{
-  /* background-color: rgb(240, 8, 8); */
+.calc{
   width: 300px;
   padding: 10px;
 }
 .title{
   display: flex;
-}
-.togle{
-  background-color: aliceblue;
-  width: 200px;
-}
-.toggle{
-  width: 80px;
-  display: flex;
-  flex-direction: column;
-  /* margin-inline-start: 190px; */
-  background-color: aqua;
-}
-.toggle p{
-  margin: 0 5px;
-  color: #ffffff;
+  top: 8em;
+  padding-left: 10px;
+  color: var(--title-color);
+  width: 35px;
+  height: 40px;
+  position: absolute;
 }
 .num{
   display: flex;
@@ -79,31 +33,12 @@ body{
   border-radius: 10px;
   border: 0;
 }
-.btnn input{
-  width: 10px;
-  height: 10px;
-  margin-right: 35px;
-  border-radius: 20px;
-  border: none;
-  background-color: black;
-}
-.control{
-  margin-right: 30%;
-}
-.control p{
-  color: #ffffff;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-h3{
-  color: #ffffff;
-}
 .cal-body{
-  background-color: hsl(224, 40%, 16%);
+  background-color: var(--cal-body-color);
   padding: 10px;
   width: 260px;
   border-radius: 10px;
   margin: 5px;
-  /* box-shadow: 0px 5px 0px 0px(224deg 0% 35%); */
 }
 .btn{
   display: flex;
@@ -113,29 +48,32 @@ h3{
 .last{
   display: flex;
   flex-flow: wrap;
-  /* padding: 10px 5px; */
 }
-.last button{
-  width: 108px;
-  height: 35px;
-  padding: 5px;
-  justify-content: center;
-  align-content: center;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0px 3px 0px 0px hsl(0, 0%, 50%);
-  margin: 2px 8px;
-  font-size: 20px;
-}
+
 .screen{
   padding: 5px;
 }
-.btn button{
+.del button{
+  background-color: var(--last-color);
+  outline: none;
+  cursor: pointer;
+  justify-content: center;
+  align-content: center;
   width: 50px;
   padding: 5px;
+  font-weight: bold;
+  color: var(--del-color);
+  border: 0;
+  margin: 4px 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px var(--last-shadow);
+}
+.but button{
+  background-color: var(--btnn-color);
+  width: 50px;
+  padding: 5px;
+  color: var(--button-color);
   justify-content: center;
   align-content: center;
   outline: none;
@@ -143,23 +81,52 @@ h3{
   font-weight: bold;
   border: 0;
   border-radius: 5px;
-  box-shadow: 0px 3px 0px 0px hsl(0, 0%, 50%);
+  box-shadow: 0px 3px 0px 0px var(--shadow-color);
   margin: 4px 5px;
   font-size: 20px;
 }
 form input{
   width: 93%;
   border-radius: 10px;
-  background-color: hsl(222, 42%, 11%);
+  background-color: var(--input-color);
   border: 0;
   height: 50px;
   padding: 5px;
 }
 .equal button{
-  box-shadow: 0px 3px 0px 0px hsl(0, 54%, 33%);
+  width: 108px;
+  height: 35px;
+  color: var(--equall-color);
+  padding: 5px;
+  background-color: var(--equal-color);
+  justify-content: center;
+  align-content: center;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px var(--equal-shadow);
+  margin: 2px 8px;
+  font-size: 20px;
 }
-.head{
-  margin-left: 5px;
+.reset button{
+  width: 108px;
+  height: 35px;
+  color: var(--del-color);
+  padding: 5px;
+  background-color: var(--last-color);
+  justify-content: center;
+  align-content: center;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px var(--last-shadow);
+  margin: 2px 8px;
+  font-size: 20px;
 }
 
-/* hsl(0, 0%, 50%) */
+
+
