@@ -22,7 +22,6 @@
   color: var(--title-color);
   width: 35px;
   height: 40px;
-  position: absolute;
 }
 .num{
   display: flex;
@@ -49,7 +48,6 @@
   display: flex;
   flex-flow: wrap;
 }
-
 .screen{
   padding: 5px;
 }
@@ -85,13 +83,23 @@
   margin: 4px 5px;
   font-size: 20px;
 }
-form input{
-  width: 93%;
-  border-radius: 10px;
+form input[type="button"]:hover{
   background-color: var(--input-color);
+}
+form .screen{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+form .screen input{
+  width: 260px;
+  text-align: right;
   border: 0;
-  height: 50px;
-  padding: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 5px 10px;
+  color: var(--theme-color);
+  background-color: var(--input-color);
 }
 .equal button{
   width: 108px;
@@ -128,5 +136,9 @@ form input{
   font-size: 20px;
 }
 
-
+@media screen and (max-width: 350px) {
+  .body{
+   position: fixed;
+  }
+}
 

@@ -12,34 +12,38 @@ code {
     monospace;
 } */
 :root{
-  --body-background: hsl(221, 26%, 47%);
+  --body-background: #324662;
   --title-color: #ffffff;
   --btnn-color: #ffffff;
-  --cal-body-color: hsl(224, 40%, 16%);
+  --cal-body-color: #192240;
   --shadow-color: hsl(0, 0%, 50%);
   --equal-shadow:  hsl(0, 54%, 33%);
-  --equal-color:  hsl(0, 92%, 52%);
-  --input-color: hsl(222, 42%, 11%);
-  --last-color: hsl(221, 26%, 47%);
+  --equal-color:  #B12D2D;
+  --input-color: #0A1336;
+  --last-color: #375B91;
   --last-shadow: hsl(194, 63%, 38%);
   --theme-color: #ffffff;
   --button-color: #000000;
   --del-color: #ffffff;
   --equall-color: #ffffff;
+  --change-color: #1B2855;
+  --elipse-color: #833B3B;
 }
 [data-theme="second"]{
-  --body-background: hsl(322, 81%, 8%);
-  --title-color: #fbff00;
-  --btnn-color: hsl(322, 94%, 14%);
-  --cal-body-color: hsl(321, 49%, 12%);
-  --shadow-color: hsl(312, 94%, 34%);
-  --equal-color:  hsl(177, 93%, 40%);
-  --equal-shadow:  hsl(175, 94%, 57%);
-  --input-color: hsl(321, 49%, 12%);
-  --last-color: hsl(319, 92%, 25%);
-  --last-shadow: hsl(319, 76%, 50%);
-  --theme-color: #fbff00;
-  --button-color: #fbff00;
+  --body-background: #19032E;
+  --title-color: #F2DB0A;
+  --btnn-color: #30164B;
+  --cal-body-color: #22053F;
+  --shadow-color: #540B9E;
+  --equal-color:  #0ED6F1;
+  --equal-shadow:  #6BEBFD;
+  --input-color: #22053F;
+  --last-color: #540B9E;
+  --last-shadow: #9A36FD;
+  --theme-color: #F2DB0A;
+  --button-color: #F2DB0A;
   --del-color: #ffffff;
   --equall-color: #000000;
+  --change-color: #FFFFFF;
+  --elipse-color: #0ED6F1;
 }

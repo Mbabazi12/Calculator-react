@@ -1,6 +1,6 @@
 .toggle-container{
     position: absolute;
-    top: 7.5em;
+    /* top: 7.5em; */
     padding-left: 170px;
 }
 
@@ -21,7 +21,7 @@
     height: 1.2em;
     width: 2.5em;
     border-radius: 1em;
-    background-color: hsl(224, 40%, 16%);
+    background-color: var(--change-color);
     margin-left: 1.1em;
 }
 .toggle + label::after{
@@ -29,7 +29,7 @@
     height: 0.9em;
     width: 1em;
     border-radius: 1em;
-    background-color: rgb(216, 20, 20);
+    background-color: var(--elipse-color);
     position: absolute;
     top: 1.3em;
     right: 1.2em;
@@ -37,4 +37,35 @@
 }
 .toggle:checked + label::after{
     transform: translateX(100%);
+}
+
+@media screen and (max-width: 350px){
+    .toggle-container{
+        top: 5em;
+    }
+}
+@media screen and (max-width: 550px){
+    .toggle-container{
+        top: 5em;
+    }
+}
+@media screen and (max-width: 750px){
+    .toggle-container{
+        top: 5em;
+    }
+}
+@media screen and (max-width: 950px){
+    .toggle-container{
+        top: 5em;
+    }
+}
+@media screen and (max-width: 1150px){
+    .toggle-container{
+        top: 10em;
+    }
+}
+@media screen and (max-width: 1550px){
+    .toggle-container{
+        top: 8.5em;
+    }
 }
