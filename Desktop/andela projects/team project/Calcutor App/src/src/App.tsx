@@ -46,14 +46,17 @@ function App() {
         setSecondOperand(null);
         setCurrentOperator(null);
       }
-    } 
-    else {
+    } else {
       if(typeof number === "string"){
+        if (number === '.' && !value.includes('.')) {
+          setValue(prev => prev + number);
+        } else {
         setCurrentOperator(number);
         setFirstOperand(parseFloat(value));
         setValue('');
       }
     }
+  }
  };
 
  const [isWhite, setIsWhite] = useState(false);
